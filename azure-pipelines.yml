@@ -22,5 +22,6 @@ steps:
 
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Pipeline.Workspace)'
+    targetPath: 'packages'
+    artifact: 'shortkeys'
     publishLocation: 'pipeline'
